@@ -22,7 +22,6 @@ def test_non_leap_year_not_dividable_by_4():
 
 def test_non_leap_year_dividable_by_100_but_not_400():
     assert isLeapYear(1700) == False
-    assert isLeapYear(1200) == False
 
 def test_leap_year_dividable_by_4000():
     assert isLeapYear(8000) == False
