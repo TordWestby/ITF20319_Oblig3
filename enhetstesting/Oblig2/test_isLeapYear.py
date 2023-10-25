@@ -1,10 +1,18 @@
-from Oblig2.isLeapYear import isLeapYear
+from isLeapYear import isLeapYear
 
 def test_leap_year_dividable_by_4_but_not_100():
     assert isLeapYear(2004) == True
+    assert isLeapYear(2008) == True
+    assert isLeapYear(2012) == True
+    assert isLeapYear(2016) == True
+    assert isLeapYear(2020) == True
 
 def test_leap_year_dividable_by_400():
     assert isLeapYear(2000) == True
+    assert isLeapYear(400) == True
+    assert isLeapYear(800) == True
+    assert isLeapYear(1600) == True
+    
 
 def test_non_leap_year_not_dividable_by_4():
     assert isLeapYear(2005) == False
